@@ -17,18 +17,22 @@ public class Main {
         double average = 0;
         double smallest = 0;
         //todo дописать логику программы ниже.
+//        greatest = first < second ? Math.max(second, third) : first;
 
-
-
-
-
+        if (first > second && first > third) {
+            greatest = first;
+        } else if (second > first && second > third) {
+            greatest = second;
+        } else {
+            greatest = third;
+        }
 
 
         //todo
 
 
-        System.out.println("Наибольший вес: " + 10);
-        System.out.println("Средний вес: " + 9);
-        System.out.println("Наименьший вес: " + 1);
+        System.out.println("Наибольший вес: " + greatest);
+        System.out.println("Средний вес: " + average);
+        System.out.println("Наименьший вес: " + smallest);
     }
 }
