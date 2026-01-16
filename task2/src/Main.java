@@ -18,7 +18,7 @@ public class Main {
         double smallest = 0;
         //todo дописать логику программы ниже.
 //        greatest = first < second ? Math.max(second, third) : first;
-        average = (first + second + third) / 3;
+        average = first > second ? Math.max(second, third) : second;
         smallest = first > second ? Math.min(second, third) : first;
         if (first > second && first > third) {
             greatest = first;
